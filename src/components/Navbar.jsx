@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full top-0 h-[12vh] sticky z-[10000] bg-black shadow-md flex items-center justify-between px-4">
+    <div className="w-full top-0 h-[12vh] fixed z-[10000] bg-black shadow-md flex items-center justify-between px-4">
       <Link to="/">
         <img src={logo} alt="Logo" className="h-20 mt-1 mb-1" />
       </Link>
