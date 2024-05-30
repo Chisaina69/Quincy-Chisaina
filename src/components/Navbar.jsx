@@ -20,8 +20,8 @@ const Navbar = () => {
         <Link to="/services" className="text-white hover:text-yellow-400 hover:border-b-2 hover:border-white">
           Service
         </Link>
-        <Link to="/portfolio" className="text-white hover:text-yellow-400 hover:border-b-2 hover:border-white">
-          Portfolio
+        <Link to="/project" className="text-white hover:text-yellow-400 hover:border-b-2 hover:border-white">
+          Projects
         </Link>
         <Link to="/contact" className="text-white hover:text-yellow-400 hover:border-b-2 hover:border-white">
           Contact
@@ -51,8 +51,8 @@ const Navbar = () => {
           <Link to="/services" className="text-white hover:text-yellow-400 hover:border-b-2 hover:border-white" onClick={() => setIsOpen(false)}>
             Services
           </Link>
-          <Link to="/portfolio" className="text-white hover:text-yellow-400 hover:border-b-2 hover:border-white" onClick={() => setIsOpen(false)}>
-            Portfolio
+          <Link to="/project" className="text-white hover:text-yellow-400 hover:border-b-2 hover:border-white" onClick={() => setIsOpen(false)}>
+            Projects
           </Link>
           <Link to="/contact" className="text-white hover:text-yellow-400 hover:border-b-2 hover:border-white" onClick={() => setIsOpen(false)}>
             Contact

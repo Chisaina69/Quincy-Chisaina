@@ -6,6 +6,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import About from './About';
 import Services from './Services';
 import Skill from './Skills';
+import Project from './Projects';
 
 const Home = () => {
   return (
@@ -55,8 +56,10 @@ const Home = () => {
         <About />
         <Services/>
         <Skill/>
+        <Project/>
+
       </div>
-    
+        
   
     </>
   );
