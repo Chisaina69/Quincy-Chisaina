@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Particle from '../Particles';
 import Textstyle from '../Textstyles';
 import selfie from '/selfie.jpg'; 
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaArrowUp } from 'react-icons/fa'; 
 import About from './About';
 import Services from './Services';
 import Skill from './Skills';
@@ -10,6 +10,27 @@ import Project from './Projects';
 import Footer from './Footer';
 
 const Home = () => {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 300) {
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
       <div className='relative h-[88vh] mt-[10vh] bg-cover bg-center'>
@@ -23,7 +44,7 @@ const Home = () => {
             </h1>
             <Textstyle /> 
             <p className='mt-[1.5rem] text-[18px] text-[#ffffff92]'>
-              Passionate software engineer with a strong focus on web development. Dedicated to coding, problem-solving, and expanding expertise in software development. Interested in gaming, anime, and spending quality time with my loyal companion, Ashley.
+              Passionate software engineer with a strong focus on web development. Dedicated to coding, problem-solving, and expanding expertise in software development.
             </p>
             <div className='mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6'>
               <a 
@@ -59,13 +80,17 @@ const Home = () => {
         <Skill/>
         <Project/>
         <Footer/>
-
+        {showScrollButton && (
+          <button
+            className="fixed bottom-10 right-10 bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600"
+            onClick={scrollToTop}
+          >
+            <FaArrowUp />
+          </button>
+        )}
       </div>
-        
-  
     </>
   );
 };
 
 export default Home;
-

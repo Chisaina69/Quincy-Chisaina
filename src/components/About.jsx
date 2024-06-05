@@ -25,7 +25,7 @@ const About = () => {
           </a>
           </div>
         </div>
-        <div className='lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] rounded-md shadow-lg relative'>
+        <div data-aos="fade-left" className='lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] rounded-md shadow-lg relative'>
           <img
             src="/smile.JPG"
             alt="Quincy"

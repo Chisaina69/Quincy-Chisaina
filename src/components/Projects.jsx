@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Project = () => {
   const [visibleProject, setVisibleProject] = useState(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const projects = [
     {
@@ -10,6 +16,8 @@ const Project = () => {
       link: "https://skill-code-9pv0.onrender.com/",
       description: "This is a full-stack webpage designed for schools. It includes various features for managing school exams and resources.",
       languages: ["HTML", "TailwindCSS", "JavaScript", "React", "(Flask)Python"],
+      aos: "fade-up",
+      aosDelay: "0",
     },
     {
       src: "/Zealtech-web.png",
@@ -17,6 +25,8 @@ const Project = () => {
       link: "https://www.zealtechdata.co.ke/",
       description: "Zealtech is a Kenyan business intelligence platform built using React. It provides analytics and insights for businesses.",
       languages: ["HTML", "TailwindCSS", "JavaScript", "React"],
+      aos: "fade-up",
+      aosDelay: "300",
     },
     {
       src: "/Playnation-web.png",
@@ -24,6 +34,8 @@ const Project = () => {
       link: "https://github.com/Chisaina69/Play-Nation",
       description: "Playnation is a gaming den website created with HTML and CSS, offering a variety of games and gaming news.",
       languages: ["HTML", "CSS", "JavaScript"],
+      aos: "fade-up",
+      aosDelay: "600",
     },
     {
       src: "/Cocktaily-web.png",
@@ -31,13 +43,17 @@ const Project = () => {
       link: "https://cocktaiily.netlify.app/",
       description: "Cocktaily is a website for cocktail recipes made with HTML and CSS. It provides detailed recipes and mixing instructions.",
       languages: ["HTML", "TailwindCSS", "JavaScript"],
+      aos: "fade-up",
+      aosDelay: "900",
     },
     {
       src: "/WamalwaSurveyors-web.png",
       alt: "Surveyors site made with HTML/CSS",
       link: "https://wamalwa-surveyors.onrender.com/",
-      description: "Wamalwa Surveyors is a professional Kenyan surveying service website  built using React, offering surveying solutions.",
+      description: "Wamalwa Surveyors is a professional Kenyan surveying service website built using React, offering surveying solutions.",
       languages: ["HTML", "TailwindCSS", "JavaScript", "React"],
+      aos: "fade-up",
+      aosDelay: "1200",
     },
   ];
 
@@ -53,7 +69,12 @@ const Project = () => {
       </h1>
       <div className='w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]'>
         {projects.map((project, index) => (
-          <div key={index} className='relative group'>
+          <div
+            key={index}
+            className='relative group'
+            data-aos={project.aos}
+            data-aos-delay={project.aosDelay}
+          >
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <div className='transform group-hover:scale-110 group-hover:shadow-2xl group-hover:z-10 transition-all duration-300 relative w-full h-[200px] md:h-[300px]'>
                 <img
