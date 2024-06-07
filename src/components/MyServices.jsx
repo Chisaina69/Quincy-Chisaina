@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaLaptopCode, FaCode, FaMobileAlt, FaAppleAlt, FaSearch, FaProjectDiagram } from 'react-icons/fa';
+import Skill from './Skills';
 
 const services = [
   {
@@ -76,6 +77,7 @@ const Service = () => {
           </div>
         ))}
       </div>
+      <Skill/>
     </div>
   );
 }
