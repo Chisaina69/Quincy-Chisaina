@@ -57,7 +57,7 @@ const Project = () => {
       aosDelay: "1200",
     },
     {
-      src: "/KoshyTravel-web.png",
+      src: "/Koshy Travel & Tours - Safaris & Flights - Google Chrome 17_06_2025 11_24_28.png",
       alt: "Travel and Tourism website",
       link: "https://koshy-travel.onrender.com/",
       description: "Koshy Travel is a modern travel and tourism website that showcases travel destinations and services. Built with React and styled with TailwindCSS.",

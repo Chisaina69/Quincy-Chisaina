@@ -39,7 +39,7 @@ const Home = () => {
     "name": "Quincy Muyekwe",
     "jobTitle": "Software Engineer",
     "description": "Passionate software engineer with a strong focus on web development. Dedicated to coding, problem-solving, and expanding expertise in software development.",
-    "url": "https://your-portfolio-url.com",
+    "url": "https://quincy-chisaina.onrender.com/",
     "sameAs": [
       "https://www.linkedin.com/in/quincy-muyekwe-794248212/",
       "https://github.com/Chisaina69"
