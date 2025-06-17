@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <div className="flex justify-center mb-4">
           <a
-            href="https://www.linkedin.com/in/me/"
+            href="https://www.linkedin.com/in/quincy-muyekwe-794248212/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-400 mr-4"

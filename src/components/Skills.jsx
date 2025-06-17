@@ -6,7 +6,7 @@ const Skill = () => {
     { title: 'CSS', percentage: 85, color: 'bg-teal-400' },
     { title: 'React JS', percentage: 95, color: 'bg-orange-500' },
     { title: 'Javascript', percentage: 90, color: 'bg-sky-400' },
-    { title: 'Next JS', percentage: 55, color: 'bg-cyan-400' },
+    { title: 'Flutter', percentage: 55, color: 'bg-cyan-400' },
     { title: 'Python', percentage: 75, color: 'bg-lime-400' },
   ];
 
